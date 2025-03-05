@@ -1,0 +1,2 @@
+FILTER Height < 173
+SEARCH InfusionStart BETWEEN ConfigPatient AND InfuseStep

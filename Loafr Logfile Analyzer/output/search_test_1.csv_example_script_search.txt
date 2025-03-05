@@ -1,0 +1,3 @@
+2,count,3
+2,thermometer,20
+2,switch,true

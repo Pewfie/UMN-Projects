@@ -1,0 +1,8 @@
+thermometer,switch,voltage,count
+decimal,boolean,decimal,integer
+0,start,true
+1,thermometer,45
+4,switch,true
+4,voltage,90.355
+5,count,1
+10,count,2

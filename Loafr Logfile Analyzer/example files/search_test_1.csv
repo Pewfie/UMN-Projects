@@ -1,0 +1,12 @@
+1,thermometer,10
+1,switch,true
+1,count,3
+2,thermometer,20
+2,switch,true
+2,count,3
+3,thermometer,20
+3,switch,false
+3,count,3
+4,thermometer,20
+4,switch,false
+4,count,4

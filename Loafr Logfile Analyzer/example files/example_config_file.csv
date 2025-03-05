@@ -1,0 +1,5 @@
+data name,data type
+thermometer,decimal
+switch,boolean
+voltage,decimal
+count,integer

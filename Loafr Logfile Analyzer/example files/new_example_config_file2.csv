@@ -1,0 +1,14 @@
+Data item,Data type
+Reason,string
+SelfTest,boolean
+DebugLevel,integer
+Config,string
+Height,integer
+Weight,integer
+Condition,string
+duration sec,decimal
+dose gms,decimal
+Cause,string
+Bubble,boolean
+Reason,string
+Reason,string

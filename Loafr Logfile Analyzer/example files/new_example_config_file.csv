@@ -1,0 +1,14 @@
+Event,Event Name,Data item,Data type
+Test System,StartUp,Reason,string
+Test System,StartUp,SelfTest,boolean
+Test System,StartUp,DebugLevel,integer
+Test System,StartUp,Config,string
+Patient Simulator,ConfigPatient,Height,integer
+Patient Simulator,ConfigPatient,Weight,integer
+Patient Simulator,ConfigPatient,Condition,string
+Infusion Controller,InfusionStart,duration sec,decimal
+Infusion Controller,InfusionStart,dose gms,decimal
+Sugar level sensor,DetectionFailed,Cause,string
+Air bubble sensor,Air check,Bubble,boolean
+Infusion Controller,Shutdown,Reason,string
+Test System,ShutDown,Reason,string

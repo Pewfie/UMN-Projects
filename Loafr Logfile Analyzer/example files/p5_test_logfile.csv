@@ -1,0 +1,11 @@
+Timestamp,Event Source,Event Name,Data item 1,Data item 2,Data item 3, Data item 4
+0.0001,Test system,StartUp,Reason=PowerUp,SelfTest=True,DebugLevel=3,Config=dev
+0.0012,Patient Simulator,ConfigPatient,Height=172,Weight=125,Condition=HyperGlycemia
+0.04121
+0.05234,Infusion Controller,InfusionStart,Height=5,dose gms=6
+0.06234,Infusion Controller,InfuseStep,Height=1,amt=1.5
+0.112344,Infusion Controller,ShutDown,Reason=UserCmd
+0.07512,Sugar level sensor,DetectionFailed,Cause=outOfRange
+0.094235,Air bubble sensor,Air check,Height=200,MaxDia=0.01
+0.14235
+0.54153,Test system,ShutDown,Reason=UserCmd

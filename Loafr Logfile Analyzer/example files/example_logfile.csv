@@ -1,0 +1,9 @@
+0,start,true
+1,thermometer,45
+1,switch,false
+4,switch,true
+4,voltage,90.355
+4,thermometer,45
+5,thermometer,50
+5,count,1
+10,count,2
