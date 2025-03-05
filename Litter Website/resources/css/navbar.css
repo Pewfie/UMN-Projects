@@ -1,0 +1,118 @@
+nav#navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 95vw;
+    height: 20vh;
+    align-self: center;
+}
+
+nav div#logowrap {
+    max-width: 35vw;
+    margin-left:10vw;
+}
+a#title img {
+    max-width: 35vw;
+    height: 100%;
+}
+
+nav div#loginwrap {
+    max-width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+nav div div#userwrap {
+    padding: 0.3em;
+    display: flex;
+    flex-direction: row;
+}
+nav div div span#baduser {
+    padding-right: 1em;
+    color:rgb(212, 153, 86);
+}
+nav div div#userwrap label {
+    padding-right: 0.2em;
+}
+
+nav div div input {
+    background-color: rgb(25, 9, 70);
+    color:#ee3eb9;
+    border-color:rgb(212, 153, 86);
+    border-style:solid;
+    border-radius:0.6em;
+    width: 15vw;
+}
+
+nav div div#passwordwrap {
+    padding: 0.3em;
+}
+
+nav div div#btnswrap {
+    padding: 0.3em;
+    display: flex;
+    flex-direction: row;
+}
+nav div div div#loginbtnwrap {
+    padding-right: 0.5em;
+}
+div#loginbtnwrap button#loginbtn {
+    background-color:rgb(212, 153, 86);
+    color:black;
+    border-style:none;
+    border-radius:0.4em;
+    padding:0.3em;
+}
+div#loginbtnwrap button#loginbtn:hover {
+    background-color:rgb(180, 116, 42);
+}
+nav div div div#newaccountwrap {
+    padding-left: 0.5em;
+}
+div#newaccountwrap button#newaccountbtn {
+    background-color:rgb(212, 153, 86);
+    color:black;
+    border-style:none;
+    border-radius:0.4em;
+    padding:0.3em;
+}
+div#newaccountwrap button#newaccountbtn:hover {
+    background-color: rgb(180, 116, 42);
+}
+
+nav div div#loginstatuswrap {
+    padding: 0.5em;
+    padding-right: 1.5em;
+    color:rgb(212, 153, 86);
+}
+
+nav div#userwrap {
+    display: flex;
+    flex-direction: column;
+}
+nav div div#currentuserwrap {
+    padding: 0.5em;
+    color: rgb(173, 216, 218);
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+nav div div span#currentuser {
+    font-size: 2em;
+}
+nav div div#logoutwrap {
+    padding: 0.5em;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+div#logoutwrap button#logoutbtn {
+    background-color:rgb(212, 153, 86);
+    color:black;
+    border-style:none;
+    border-radius:0.4em;
+    padding:0.3em;
+}
+div#logoutwrap button#logoutbtn:hover {
+    background-color: rgb(180, 116, 42);
+}

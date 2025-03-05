@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+div#bodywrap {
+    margin: 0;
+    padding: 0;
+    background-color:rgb(25, 9, 70);
+    min-height: 100vh;
+    color: #ee3eb9;
+    display: flex;
+    flex-direction: column;
+}
+
+*.hidden {
+    display: none;
+}
+
+button:hover {
+    cursor:pointer;
+}
+
+h1 {
+    font-size: 4em;
+    text-align: center;
+}

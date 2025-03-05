@@ -1,0 +1,192 @@
+div#createwrap {
+    display: flex;
+    flex-direction: row;
+    max-width: 95vw;
+    justify-content: center;
+    padding:1em;
+}
+textarea {
+    flex-grow: 7;
+    background-color: rgb(25, 9, 70);
+    color:#ee3eb9;
+    border-color:rgb(212, 153, 86);
+    border-style:solid;
+    border-radius:0.6em;
+    padding: 0.4em;
+    max-width: 60vw;
+    height: 2.3em;
+    resize: none;
+}
+div button#createbtn {
+    background-color: #ee3eb9;
+    color:rgb(25, 9, 70);
+    border-style:none;
+    border-radius:0.6em;
+    margin-left:0.2em;
+}
+div button#createbtn:hover {
+    background-color: #a72880;
+}
+div#creationerrorwrap {
+    color:rgb(212, 153, 86);
+    font-weight: bold;
+    padding-bottom:1em;
+}
+
+
+div#sortwrap {
+    display: flex;
+    max-height: 5vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+div#sortwrap button {
+    width: 6vw;
+    height: 6vh;
+    background-color: #ee3eb9;
+    color: rgb(25, 9, 70);
+    border-radius: 8px;
+    border-style:none;
+}
+div#sortwrap button:hover {
+    background-color: #a72880;
+}
+div#sortwrap div#sorttext {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:1.6em;
+}
+
+
+div#postswrap {
+    margin-top: 1em;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+div#postswrap > div {
+    margin: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    outline-color:rgb(212, 153, 86);
+    outline-style:solid;
+    display:flex;
+    flex-direction:column;
+}
+div#postswrap div p.user {
+    color:aliceblue;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style:italic;
+    font-size:1.4em;
+    margin-top:0.3em;
+    margin-bottom:0.3em;
+}
+div#postswrap div div.postarea {
+    display:flex;
+    flex-direction: row;
+}
+div#postswrap div div p.post {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:1.2em;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    overflow-wrap: anywhere;
+}
+div#postswrap div div button.submiteditbtn {
+    background-color: #ee3eb9;
+    color:rgb(25, 9, 70);
+    border-style:none;
+    border-radius:0.6em;
+    margin-left:0.2em;
+    padding-right:0.5em;
+}
+div#postswrap div div button.submiteditbtn:hover {
+    background-color: #a72880;
+}
+div#postswrap div div.postfooter {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items: center;
+}
+div#postswrap div div.postfooter span.time {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:0.8em;
+    color:aliceblue;
+}
+div#postswrap div div.postfooter span.likes {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.4em;
+    font-weight:bold;
+    color:rgb(175, 10, 10);
+}
+div#postswrap div div.likebtn {
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-end;
+}
+div#postswrap div div.likebtn button {
+    background-color: rgb(175, 10, 10);
+    color:aliceblue;
+    border-radius:0.3em;
+    border-style:none;
+    font-size:1.2em;
+    padding-top:0.2em;
+    padding-bottom:0.2em;
+    padding-left:0.3em;
+    padding-right:0.3em;
+    margin:0.3em;
+}
+div#postswrap div div.likebtn button:hover {
+    background-color: rgb(114, 5, 5);
+}
+div#postswrap div div.editbtns {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+div#postswrap div div.editbtns button {
+    background-color:rgb(212, 153, 86);
+    color:black;
+    border-radius:0.3em;
+    border-style:none;
+    font-size:0.8em;
+    padding-top:0.2em;
+    padding-bottom:0.2em;
+    padding-left:0.3em;
+    padding-right:0.3em;
+    margin:0.3em;
+    margin-bottom:0.8em;
+}
+div#postswrap div div.editbtns button:hover {
+    background-color: rgb(180, 116, 42);
+}
+
+div#pageswrap {
+    margin-top: 0.6em;
+    margin-bottom: 1em;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    font-weight: bold;
+    gap:2em;
+}
+
+div#pageswrap div {
+    width:10vw;
+}
+
+div#pageswrap a {
+    color: #f19ed9;
+}
+
+div#pageswrap a:hover {
+    color:#b35197;
+}
+
+

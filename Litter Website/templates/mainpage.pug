@@ -1,0 +1,90 @@
+doctype html
+html 
+    head
+        meta(charset="UTF-8")
+        title Litter 
+        link(rel="stylesheet" href="/css/main.css")
+        link(rel="stylesheet" href="/css/navbar.css")
+        link(rel="stylesheet" href="/css/posts.css")
+        script(async src="/js/posts.js")
+        script(async src="/js/login.js")
+    body 
+        #bodywrap 
+            nav#navbar
+                #logowrap 
+                    a(href="/" id="title") 
+                        img(src="/images/logo.jpg" alt="Litter")
+                if (currentUser == null)
+                    #loginwrap 
+                        #userwrap
+                            span(id="baduser" class="hidden") Invalid Username
+                            label(for="user") Username: 
+                            input(id="user" type="text" name="user"
+                                        maxlength=32)
+                        #passwordwrap
+                            label(for="password") Password: 
+                            input(id="password" type="text" name="password")
+                        #btnswrap
+                            #loginbtnwrap
+                                button(id="loginbtn" onclick="tryLogin()") Login
+                            #newaccountwrap
+                                button(id="newaccountbtn" onclick="makeAccount()") Create Account
+                        #loginstatuswrap 
+                            span(id="badlogin" class="hidden") Invalid Login
+                            span(id="accountcreated" class="hidden") Account Created
+                else
+                    #userwrap
+                        #currentuserwrap
+                            span#currentuser= currentUser
+                        #logoutwrap 
+                            button(id="logoutbtn" onclick="logout()") Logout
+            if (currentUser != null)
+                #createwrap
+                    textarea(name="create" id="create" placeholder="Write a post" maxlength="250")
+                    button(id="createbtn" onclick="createPost()") Create Post
+                div#creationerrorwrap  
+                    span(id="creationerror" class="hidden") 
+            #sortwrap 
+                a(id="sortrecent" href="/")
+                    button#sortrecentbtn Recent Posts
+                #sorttext Sort By
+                a(id="sortlike" href="/liked") 
+                    button#sortlikedbtn Top Posts
+            #postswrap 
+                each post in posts 
+                    div(id="post"+post.id)
+                        p.user= post.user
+                        .postarea 
+                            p.post= post.posttext
+                            textarea(class="editarea hidden" maxlength="250")= post.posttext
+                            button(class="submiteditbtn hidden" onclick="submitEdit(this)") Submit
+                        .postfooter
+                            if (post.edittime == null)
+                                span.time Posted at #{post.posttime} 
+                            else 
+                                span.time Edited at #{post.edittime}
+                            span.likes #{post.likes} Likes
+                        if (post.user == currentUser)
+                           .editbtns 
+                                button(class="deletebtn" onclick="deletePost(this)") Delete
+                                button(class="editbtn" onclick="editPost(this)") Edit
+                                button(class="cancelbtn hidden" onclick="cancelEdit(this)") Cancel
+                        else 
+                            .likebtn 
+                                button(onclick="likePost(this)") Like
+                        span(class="errmsg hidden")
+            #pageswrap
+                - let url = "/"
+                if (liked)
+                    - url = "/liked/"
+                #prevpagewrap
+                    if (pagenum > 0)
+                        - const prevpage = parseInt(pagenum) - 1
+                        a(id="prevpage" href=""+url+prevpage) Last Page
+                span#pagenum Page #{pagenum}
+                #nextpagewrap 
+                    if (morepages)
+                        - const nextpage = parseInt(pagenum) + 1
+                        a(id="nextpage" href=""+url+nextpage) Next Page
+            
+
